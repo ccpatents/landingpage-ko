@@ -205,8 +205,11 @@ header.masthead {
   display: block;
 }
 
-header.masthead a {
+header.masthead a.more-info {
   color: white;
+}
+
+header.masthead a.more-info:hover {
   text-decoration: none;
   color: #3e77e2;
 }
@@ -231,10 +234,10 @@ header.masthead .intro-text .intro-heading {
   header.masthead {
     min-height: 100vh;
   }
-  header.masthead a {
+  header.masthead a.more-info {
     color: white;
   }
-  header.masthead a:hover {
+  header.masthead a.more-info:hover {
     text-decoration: none;
     color: #3e77e2;
   }

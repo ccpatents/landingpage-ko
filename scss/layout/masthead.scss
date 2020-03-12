@@ -10,10 +10,12 @@ header.masthead {
   background-size: cover;
   display: block;
   
-  a {
+  a.more-info {
     color: white;
-    text-decoration: none;
-    color: $primary;
+    &:hover {
+      text-decoration: none;
+      color: $primary;
+    }
   }
 
   .intro-text {
@@ -37,7 +39,7 @@ header.masthead {
   header.masthead {
     min-height: 100vh;
 
-    a {
+    a.more-info {
       color: white;
       &:hover {
         text-decoration: none;
