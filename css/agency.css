@@ -208,6 +208,7 @@ header.masthead {
 header.masthead a {
   color: white;
   text-decoration: none;
+  color: #3e77e2;
 }
 
 header.masthead .intro-text .intro-lead-in {
@@ -235,6 +236,7 @@ header.masthead .intro-text .intro-heading {
   }
   header.masthead a:hover {
     text-decoration: none;
+    color: #3e77e2;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;

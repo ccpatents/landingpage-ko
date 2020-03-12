@@ -13,6 +13,7 @@ header.masthead {
   a {
     color: white;
     text-decoration: none;
+    color: $primary;
   }
 
   .intro-text {
@@ -40,6 +41,7 @@ header.masthead {
       color: white;
       &:hover {
         text-decoration: none;
+        color: $primary;
       }
     }
 
