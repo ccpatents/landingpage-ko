@@ -1,9 +1,10 @@
 // Styling for the masthead
 header.masthead {
-  height: 70vh;
+  min-height: 70vh;
+  padding-top: 5rem;
   color: white;
   text-align: center;
-  background-image: url('../img/header-bg.jpg');
+  background-image: linear-gradient(to bottom, #{fade-out($gray-700, .15)} 0%, #{fade-out($gray-700, .35)} 100%), url('../img/header-bg-m.png');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -19,6 +20,7 @@ header.masthead {
   }
 
   .intro-text {
+    padding-top: 0;
     .intro-lead-in {
       font-size: 22px;
       font-style: italic;
@@ -37,8 +39,9 @@ header.masthead {
 }
 @media(min-width:768px) {
   header.masthead {
-    min-height: 100vh;
-
+    background-image: linear-gradient(to bottom, #{fade-out($gray-700, .15)} 0%, #{fade-out($gray-700, .35)} 100%), url('../img/header-bg-d.png');
+    height: 100vh;
+    padding-top: 0;
     a.more-info {
       color: white;
       &:hover {
