@@ -67,42 +67,25 @@
     xhr.open('POST', url);
     // xhr.withCredentials = true;
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-          console.log('hello');
-          form.reset();
-          enableAllButtons(form);
-          /*nativeToast({
-            message: '보내기 성공',
-            edge: false,
-            debug: false
-          })*/
-          /*var formElements = form.querySelector(".form-elements")
-          if (formElements) {
-            formElements.style.display = "none"; // hide form
-          }
-          var thankYouMessage = form.querySelector(".thankyou_message");
-          if (thankYouMessage) {
-            thankYouMessage.style.display = "block";
-          }*/
-        }
-    };
+    
     // url encode form data for sending as post data
     var encoded = Object.keys(data).map(function(k) {
         return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
     }).join('&');
     xhr.send(encoded);
 
-    // Success message
     $('#success').html("<div class='alert alert-success'>");
     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-      .append("</button>");
+            .append("</button>");
     $('#success > .alert-success')
-      .append("<strong>Your message has been sent. </strong>");
+            .append("<strong>Your message has been sent. </strong>");
     $('#success > .alert-success')
-      .append('</div>');
+            .append('</div>');
     //clear all fields
     $('#contactForm').trigger("reset");
+    setTimeout(function() {
+      $('#success').html("");
+    },3000);
   }
   
   function loaded() {
