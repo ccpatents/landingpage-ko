@@ -304,6 +304,9 @@ header.masthead .intro-text .intro-heading {
 }
 
 #videos .videos-item .videos-link {
+  border-top: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+  border-left: 1px solid #dee2e6;
   position: relative;
   display: block;
   max-width: 400px;
