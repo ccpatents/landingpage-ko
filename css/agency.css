@@ -223,7 +223,7 @@ img::-moz-selection {
 
 header.masthead {
   min-height: 70vh;
-  padding-top: 5rem;
+  padding-top: 7.5rem;
   color: white;
   text-align: center;
   background-image: url("../img/header-bg-m.png");
