@@ -48,6 +48,18 @@ var video6;
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  var siteStellar = function() {
+    $(window).stellar({
+      responsive: false,
+      parallaxBackgrounds: true,
+      parallaxElements: true,
+      horizontalScrolling: false,
+      hideDistantElements: false,
+      scrollProperty: 'scroll'
+    });
+  };
+  siteStellar();
+
   var tag = document.createElement('script');
 
   tag.src = "https://www.youtube.com/iframe_api";

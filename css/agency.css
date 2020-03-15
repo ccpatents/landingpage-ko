@@ -225,13 +225,21 @@ header.masthead {
   padding-top: 5rem;
   color: white;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(73, 80, 87, 0.9)), to(rgba(73, 80, 87, 0.75))), url("../img/header-bg-m.png");
-  background-image: linear-gradient(to bottom, rgba(73, 80, 87, 0.9) 0%, rgba(73, 80, 87, 0.75) 100%), url("../img/header-bg-m.png");
+  background-image: url("../img/header-bg-m.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
   display: block;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 70vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(73, 80, 87, 0.7)), to(rgba(73, 80, 87, 0.55)));
+  background-image: linear-gradient(to bottom, rgba(73, 80, 87, 0.7) 0%, rgba(73, 80, 87, 0.55) 100%);
 }
 
 header.masthead a.more-info {
@@ -244,6 +252,7 @@ header.masthead a.more-info:hover {
 }
 
 header.masthead .intro-text {
+  z-index: 3;
   padding-top: 0;
 }
 
@@ -265,10 +274,17 @@ header.masthead .intro-text .intro-heading {
 
 @media (min-width: 768px) {
   header.masthead {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(52, 58, 64, 0.9)), to(rgba(52, 58, 64, 0.75))), url("../img/header-bg-d.png");
-    background-image: linear-gradient(to bottom, rgba(52, 58, 64, 0.9) 0%, rgba(52, 58, 64, 0.75) 100%), url("../img/header-bg-d.png");
+    background-image: url("../img/header-bg-d.png");
     height: 100vh;
     padding-top: 0;
+  }
+  header.masthead .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(73, 80, 87, 0.7)), to(rgba(73, 80, 87, 0.55)));
+    background-image: linear-gradient(to bottom, rgba(73, 80, 87, 0.7) 0%, rgba(73, 80, 87, 0.55) 100%);
   }
   header.masthead a.more-info {
     color: white;
@@ -759,4 +775,3 @@ ul.social-buttons li a {
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #1f65e7;
 }
-/*# sourceMappingURL=agency.css.map */
