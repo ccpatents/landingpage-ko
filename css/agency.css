@@ -202,11 +202,12 @@ img::-moz-selection {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    font-size: 1.75em;
+    font-size: 1.65em;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 1.15em;
     padding: 1.1em 1em !important;
   }
   #mainNav.navbar-shrink {
@@ -215,7 +216,7 @@ img::-moz-selection {
     background-color: #343a40;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.25em;
+    font-size: 1.5em;
     padding: 12px 0;
   }
 }
@@ -236,6 +237,7 @@ header.masthead {
 header.masthead .overlay {
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
   min-height: 70vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(73, 80, 87, 0.7)), to(rgba(73, 80, 87, 0.55)));
